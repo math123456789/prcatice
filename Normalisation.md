@@ -7,27 +7,41 @@ and also gives issues like
 + Updation anomaly:
 *example*:
 we have a students table where rows are roll_no,name,Branch ,hod(head of department),office_tel
- | roll_no | name | Branch | hod(head of department) | office_tel |
+
+
+
+| roll_no | name | Branch | hod(head of department) | office_tel |
 |----------|---------|-----------|-----------------------------------|--------------|  
 |1| Bruno mars|CSE|Mr.Ramanujam|53337|
 |2| Dennis|CSE|Mr.Ramanujam|53337|
 |3|Bruce lee| CSE| Mr.Ramanujam|53337|
 |4|Michael Jackson|ECE|Mr.Druva|54447|
 
+
 Whenever we add a new student to students table  of samebranch,hod(head of department),office_tel keeps repeated
 To avoid This we partition the table into two tables..This is Normalization
-one is  students table and other is Branch table                                   | roll_no | name | Branch |
+one is  students table and other is Branch table                             
+
+
+
+| roll_no | name | Branch |
 |----------|---------|------|
 |1| Bruno mars|CSE|
 |2| Dennis|CSE|
 |3|Bruce lee| CSE|
 |4|Michael Jackson|ECE|
+
+
+
 | Branch | hod(head of department) | office_tel |
 |----------|---------|-----------|-----------------------------------|--------------|  
 |CSE|Mr.Ramanujam|53337|
 |CSE|Mr.Ramanujam|53337|
 | CSE|Mr.Ramanujam|53337|
 |ECE|Mr.Druva|54447|
+
+
+
 there are  different types of Normalization
 + *1NF*
 + *2NF*
@@ -45,7 +59,10 @@ there are  different types of Normalization
 + it should be in 1st Normal Form
 + And, it should not Have any Partial Dependencies
 *example*:we have a students table
- | student_id| name | Reg_no| Branch | address|
+
+
+
+| student_id | name | Reg_no | Branch | address |
 |----------|---------|-----------|-----------------------------------|--------------|  
 |1| Bruno mars|100|CSE|United states|
 |2| Dennis|101|CSE|New York|
