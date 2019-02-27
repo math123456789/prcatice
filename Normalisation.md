@@ -92,6 +92,7 @@ Move teacher column to subject table
 
 |subject_id|subject_name|teacher|
 |--------------|------------------ |----------|
+| | | |
 
 *3NF(3rd Normal Form)* :For a table to be in 3NF
 + it should be in 2NF
@@ -101,6 +102,7 @@ in scores table add two more columns which are exam_name, total_marks
 
 |score_id|student_id|subject_id|marks|exam_name|total_marks|
 |-----------|--------------|--------------|--------|----------------|-----------------|
+| | | | | | |
 
 student_id+subject_id is the primary key in scores table.Here total_marks depends only on exam_name which is a non-key attribute.this is Transitive Dependency
 to satisfy 3NF Transitive Dependency should not exist. We make a new table exam where we take out exam_name and total_marks from scores table and add in exam table
