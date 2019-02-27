@@ -68,7 +68,9 @@ there are  different types of Normalization
 |2| Dennis|101|CSE|New York|
 |3|Bruce lee| 102| CSE|Hong-kong|
 |4|Michael Jackson|103|ECE|United states|  
+
 Lets create subject table
+
 |subject_id|subject_name|
 |-------------|------------------|
 |1002|Maths|
@@ -85,13 +87,16 @@ Another table called scores table is created to save marks obtained by students 
 |4|Michael Jackson|1003|4|Mr.Devendre|
 Here the primary key is student_id + subject_id...notice that teacher column only depends on subject_id but not on student_id  this is called Partial Dependency and for a tble to be in 2NF this should not exist.
 Move teacher column to subject table
- |subject_id|subject_name|teacher|
+
+|subject_id|subject_name|teacher|
 |--------------|------------------ |----------|
+
 *3NF(3rd Normal Form)* :For a table to be in 3NF
 + it should be in 2NF
 + it should not have Transitive Dependency
 lets continue our previous example
 in scores table add two more columns which are exam_name, total_marks
+
 |score_id|student_id|subject_id|marks|exam_name|total_marks|
 |-----------|--------------|--------------|--------|----------------|-----------------|
 
